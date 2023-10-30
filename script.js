@@ -5,6 +5,7 @@ function volume_sphere(event) {
 	event.preventDefault();
 	let radius = form.radius.value;
 	let volume = 4*(Math.PI)*(radius**3)/3;
+	volume = volume.toFixed(4);
 	form.volume.value = volume;
 } 
 
